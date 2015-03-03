@@ -7,8 +7,10 @@
 //
 
 #import "ETViewController.h"
+#import "NetworkController.h"
 
 @interface ETViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 
 @end
 
@@ -17,7 +19,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    NetworkController *networkController = [NetworkController new];
+    [networkController getExactTimeInfo:^(NSDictionary *extactTimeInfo, NSError *error) {
+        if(!error)
+        {
+            NSLog(@"%@", extactTimeInfo);
+            self.timeLabel.text = extactTimeInfo[@"time"];
+        }else
+        {
+            NSLog(@"%@",error.userInfo [NSLocalizedDescriptionKey]);
+        }
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning

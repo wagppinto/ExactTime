@@ -30,6 +30,7 @@
 		BC1D952A1AA63E9F009CAC17 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1D951F1AA63E9F009CAC17 /* AFURLRequestSerialization.m */; };
 		BC1D952B1AA63E9F009CAC17 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1D95211AA63E9F009CAC17 /* AFURLResponseSerialization.m */; };
 		BC1D952C1AA63E9F009CAC17 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1D95231AA63E9F009CAC17 /* AFURLSessionManager.m */; };
+		BC1D95301AA63F36009CAC17 /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1D952F1AA63F36009CAC17 /* NetworkController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		BC1D95211AA63E9F009CAC17 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = External/AFNetworking/AFNetworking/AFURLResponseSerialization.m; sourceTree = SOURCE_ROOT; };
 		BC1D95221AA63E9F009CAC17 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = External/AFNetworking/AFNetworking/AFURLSessionManager.h; sourceTree = SOURCE_ROOT; };
 		BC1D95231AA63E9F009CAC17 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = External/AFNetworking/AFNetworking/AFURLSessionManager.m; sourceTree = SOURCE_ROOT; };
+		BC1D952E1AA63F36009CAC17 /* NetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkController.h; sourceTree = "<group>"; };
+		BC1D952F1AA63F36009CAC17 /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 				7167C5AF19500AFB00FD8F55 /* Main.storyboard */,
 				7167C5B219500AFB00FD8F55 /* ETViewController.h */,
 				7167C5B319500AFB00FD8F55 /* ETViewController.m */,
+				BC1D952E1AA63F36009CAC17 /* NetworkController.h */,
+				BC1D952F1AA63F36009CAC17 /* NetworkController.m */,
 				7167C5B519500AFB00FD8F55 /* Images.xcassets */,
 				BC1D952D1AA63EAB009CAC17 /* AFNetworking */,
 				7167C5A419500AFB00FD8F55 /* Supporting Files */,
@@ -316,6 +321,7 @@
 				BC1D952A1AA63E9F009CAC17 /* AFURLRequestSerialization.m in Sources */,
 				BC1D952C1AA63E9F009CAC17 /* AFURLSessionManager.m in Sources */,
 				7167C5AA19500AFB00FD8F55 /* main.m in Sources */,
+				BC1D95301AA63F36009CAC17 /* NetworkController.m in Sources */,
 				7167C5AE19500AFB00FD8F55 /* ETAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

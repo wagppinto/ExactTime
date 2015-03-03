@@ -7,37 +7,31 @@
 //
 
 #import "ETViewController.h"
-#import "AFNetworking.h"
+#import "NetworkController.h"
 
 @interface ETViewController ()
+
+@property (nonatomic, strong) IBOutlet UILabel *timeLabel;
 
 @end
 
 @implementation ETViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.timeapi.org/utc/now"]];
-
-    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-    operation.responseSerializer = [AFHTTPResponseSerializer serializer];
+    NetworkController *networkController = [[NetworkController alloc] init];
     
-    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"%@", [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@",error.userInfo[NSLocalizedDescriptionKey]);
+    [networkController getExactTimeInfo:^(NSDictionary *exactTimeInfo, NSError *error) {
+       
+        if (!error) {
+            self.timeLabel.text = exactTimeInfo[@"time"];
+        } else {
+            NSLog(@"%@",error.userInfo[NSLocalizedDescriptionKey]);
+        }
     }];
     
-    [operation start];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 @end

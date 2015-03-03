@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F2C96591AA5C8EE00AB2EF8 /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2C96581AA5C8EE00AB2EF8 /* NetworkController.m */; };
 		7167C59E19500AFB00FD8F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7167C59D19500AFB00FD8F55 /* Foundation.framework */; };
 		7167C5A019500AFB00FD8F55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7167C59F19500AFB00FD8F55 /* CoreGraphics.framework */; };
 		7167C5A219500AFB00FD8F55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7167C5A119500AFB00FD8F55 /* UIKit.framework */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F2C96571AA5C8EE00AB2EF8 /* NetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkController.h; sourceTree = "<group>"; };
+		4F2C96581AA5C8EE00AB2EF8 /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
 		7167C59A19500AFB00FD8F55 /* ExactTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExactTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7167C59D19500AFB00FD8F55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7167C59F19500AFB00FD8F55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -146,6 +149,8 @@
 				7167C5AF19500AFB00FD8F55 /* Main.storyboard */,
 				7167C5B219500AFB00FD8F55 /* ETViewController.h */,
 				7167C5B319500AFB00FD8F55 /* ETViewController.m */,
+				4F2C96571AA5C8EE00AB2EF8 /* NetworkController.h */,
+				4F2C96581AA5C8EE00AB2EF8 /* NetworkController.m */,
 				7167C5B519500AFB00FD8F55 /* Images.xcassets */,
 				7167C5A419500AFB00FD8F55 /* Supporting Files */,
 			);
@@ -317,6 +322,7 @@
 				7167C5EC19500C7C00FD8F55 /* AFURLRequestSerialization.m in Sources */,
 				7167C5EE19500C7C00FD8F55 /* AFURLSessionManager.m in Sources */,
 				7167C5AA19500AFB00FD8F55 /* main.m in Sources */,
+				4F2C96591AA5C8EE00AB2EF8 /* NetworkController.m in Sources */,
 				7167C5AE19500AFB00FD8F55 /* ETAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +528,7 @@
 				7167C5CE19500AFB00FD8F55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7167C5CF19500AFB00FD8F55 /* Build configuration list for PBXNativeTarget "ExactTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +537,7 @@
 				7167C5D119500AFB00FD8F55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
